@@ -67,7 +67,7 @@ class App extends Component {
   renderItems = () => {
     const { viewCompleted } = this.state;
     const newItems = this.state.todoList.filter(
-      (item) => item.completed == viewCompleted
+      (item) => item.completed === viewCompleted
     );
 
     return newItems.map((item) => (
@@ -112,3 +112,5 @@ class App extends Component {
     );
   }
 }
+
+export default App;
