@@ -92,6 +92,23 @@ class App extends Component {
   };
 
   render() {
-    return <div></div>;
+    return (
+      <main className="container">
+        <h1 className="text-white text-uppercase text-center my-4">Todo app</h1>
+        <div className="row">
+          <div className="col-md-6 col-sm-10 mx-auto p-0">
+            <div className="card p-3">
+              <div className="mb-4">
+                <button className="btn btn-primary">Add task</button>
+              </div>
+              {this.renderTabList()}
+              <ul className="list-group list-group-flush border-top-0">
+                {this.renderItems()}
+              </ul>
+            </div>
+          </div>
+        </div>
+      </main>
+    );
   }
 }
